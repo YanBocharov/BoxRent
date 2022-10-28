@@ -1,0 +1,40 @@
+.header {
+    margin-top: 40px;
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+        list-style-type: none;
+    }
+    &__item {
+        text-transform: uppercase;
+    }
+    &__block {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+    &__mobileLink {
+        margin-left: 10px;
+    }
+    &__link {
+        text-decoration: none;
+        color:#fff;
+    }
+}
+
+.numberBlock {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}

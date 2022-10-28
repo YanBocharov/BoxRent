@@ -1,0 +1,23 @@
+.investing {
+    &__wall {
+        margin-top: 140px;
+    }
+    &__text {
+        max-width: 700px;
+    }
+}
+
+
+
+
+
+.background {
+    img {
+        position: absolute;
+        width: 100vw;
+        height: 970px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
