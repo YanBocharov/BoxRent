@@ -1,0 +1,66 @@
+.profit {
+    &__title {
+        padding-top: 120px;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 130%;
+        color: #3C4D69;
+    }
+    &__blocks {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        height: 336px;
+        flex-direction: column;
+        &-descr {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #707C88;
+        }
+    }
+    &__total {
+        &-descr {
+            width: 250px;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #3C4D69;
+            margin-top: 60px;
+        }
+        &-wall {
+            width: 70%;
+            margin-top: 60px;
+        }
+        &-together {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #3C4D69;
+        }
+        &-value {
+            color: #EA142E;
+            font-weight: 600;
+        }
+    }
+}
+
+.greyBlock {
+    background: #F6F6F6;
+    width: 360px;
+    height: 340px;
+    align-items: center;
+    justify-content: start;
+}
+.mt30 {
+    margin-top: 30px;
+}
