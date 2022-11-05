@@ -8,7 +8,6 @@
     }
     &__blocks {
         margin-top: 60px;
-        margin-bottom: 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -19,10 +18,20 @@
         height: 336px;
         flex-direction: column;
         &-descr {
+            position: relative;
             font-weight: 400;
             font-size: 20px;
             line-height: 24px;
             color: #707C88;
+            &-tm {
+                position: absolute;
+                background: url('../../img/profit/tm.svg') center center/cover no-repeat;
+                width: 14px;
+                height: 14px;
+                top: -50%;
+                transform: translateY(50%);
+                right: -12px;
+            }
         }
         &-value {
             height: 50px;
@@ -42,11 +51,30 @@
         &-snake {
             width: 265px;
             &-line {
-                margin-top: 55px;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px solid #CED6DA;
+                margin-top: 35px;
+                &-text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #707C88;
+                    margin-top: 20px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+                img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 30%;
+                }
             }
+            
         }
     }
     &__total {
@@ -88,4 +116,7 @@
 }
 .mt30 {
     margin-top: 30px;
+}
+.width122 {
+    max-width: 122px;
 }
