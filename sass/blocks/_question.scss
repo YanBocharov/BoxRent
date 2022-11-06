@@ -1,6 +1,7 @@
 .question {
     &__blocks {
         display: flex;
+        justify-content: space-between;
     }
     &__block {
         &-img {
@@ -13,7 +14,36 @@
             }
         }
         &-text {
-            
+            margin-top: 115px;
+            margin-right: 75px;
+            width: 535px;
+
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 65px;
+        line-height: 84px;
+        color: #3C4D69;
+    }
+    &__subtitles {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__subtitle {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 12px;
+            left: -25px;
+            width: 5px;
+            height: 5px;
+            background: #3C4D69;
+            border-radius: 100%;
         }
     }
 }
