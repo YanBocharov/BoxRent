@@ -1,0 +1,19 @@
+.location {
+    &__img {
+        width: 700px;
+        height: 550px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        // gap: 30px;
+        margin-top: 30px;
+    }
+    &__title {
+        margin-top: 92px;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 58px;
+        color: #3C4D69;
+    }
+}
