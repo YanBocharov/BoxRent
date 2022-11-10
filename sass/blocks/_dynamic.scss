@@ -23,9 +23,16 @@
         display: grid;
         grid-template-columns: 430px auto;
         align-items: center;
+        transition: 0.6s all;
+        cursor: pointer;
         &-img {
             display: flex;
             justify-content: center;
+            svg {
+                path {
+                    transition: 0.6s all;
+                }
+            }
         }
         &-date {
             background-color: #EA142E;
@@ -37,6 +44,7 @@
             color: #fff;
             font-weight: 600;
             font-size: 24px;
+            transition: 0.6s all;
         }
         &-subtitles {
             margin-top: 30px;
@@ -47,8 +55,10 @@
         }
         &-subtitle {
             position: relative;
+            transition: 0.6s all;
             &::before {
                 content: '';
+                transition: 0.6s all;
                 display: block;
                 position: absolute;
                 width: 5px;
@@ -64,16 +74,49 @@
             position: relative;
             padding-left: 23px;
             margin-top: 30px;
-            &::before {
+            transition: 0.6s all;
+            color: #707C88;
+            svg {
                 content: '';
                 display: block;
-                background: url('../../img/dynamic/marker.svg') center center/cover no-repeat;
                 width: 11px;
                 height: 16px;
                 position: absolute;
                 left: 0;
                 top: 0;
+                transition: 0.6s all;
+                path {
+                    transition: 0.6s all;
+                }
             }
+        }
+        &:hover {
+            background-color: #3C4D69;
+        }
+        &:hover .dynamic__block-date {
+            background-color: #fff;
+            color: #000;
+            transition: 0.6s all;
+        }
+        &:hover .dynamic__block-img svg path {
+            fill: #fff;
+            transition: 0.6s all;
+        }
+        &:hover .dynamic__block-subtitle {
+            color: #fff;
+        }
+        &:hover .dynamic__block-subtitle {
+            &::before {
+                background: #fff;
+            }
+        }
+        &:hover .dynamic__block-location {
+            color: #fff;
+            opacity: 0.5;
+        }
+        &:hover .dynamic__block-location svg path {
+            fill: #fff;
+            transition: 0.6s all;
         }
     }
 }
