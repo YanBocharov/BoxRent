@@ -1,0 +1,71 @@
+.pension {
+    background: linear-gradient(77.58deg, #212C3F 74.78%, #EA142E 166.86%), linear-gradient(101.27deg, #1B2E46 64.2%, #EA142E 177.91%), #1C2F47;
+    height: 1111px;
+    &__title {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 140%;
+        color: #FFFFFF;
+        padding-top: 200px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 140%;
+        color: #FFFFFF;
+        padding-top: 20px;
+    }
+    &__blocks {
+        padding-top: 85px;
+        display: grid;
+        grid-template-columns: repeat(2, 700px);
+        gap: 30px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 0 80px;
+        flex-direction: column;
+        border: 1px solid rgba(235, 239, 240, 0.06);
+        gap: 30px;
+        &_1 {
+            height: 173px;
+        }
+        &_2 {
+            height: 270px;
+        }
+        &_3 {
+            height: 270px;
+        }
+        &_4 {
+            height: 173px;
+        }
+    }
+    &__text {
+        position: relative;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        color: #FFFFFF;
+        &::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 12px;
+            background: url('../../img/pensionSection/galka.svg') center center/cover no-repeat;
+            position: absolute;
+            left: -50px;
+            top: 5px;
+        }
+        p {
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

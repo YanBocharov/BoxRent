@@ -1,0 +1,51 @@
+.sphere {
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 100px;
+    }
+    &__img {
+        width: 700px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 120%;
+        color: #3C4D69;
+        margin-top: 200px;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 140%;
+        color: #3C4D69;
+        margin-top: 43px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: #707C88;
+        margin-top: 30px;
+        max-width: 540px;
+        p {
+            position: relative;
+            margin-left: 30px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: -24px;
+                top: 10px;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background: #707C88;
+            }
+            &:nth-child(2){
+                margin-top: 20px;
+            }
+        }
+    }
+}
