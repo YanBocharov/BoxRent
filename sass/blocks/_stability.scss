@@ -1,0 +1,35 @@
+.stability {
+    &__title {
+        margin-top: 200px;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 140%;
+        color: #3C4D69;
+    }
+    &__items {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 334px);
+        grid-template-rows: repeat(2, 534px);
+        justify-content: space-between;
+        row-gap: 40px;
+    }
+    &__item {
+        padding: 40px;
+        background: #F6F6F6;
+    }
+    &__subtitle {
+        margin-top: 50px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: #3C4D69;
+    }
+    &__descr {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #707C88;         
+    }
+}
