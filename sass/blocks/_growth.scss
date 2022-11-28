@@ -1,0 +1,98 @@
+.growth {
+    min-height: 1100px;
+    margin-top: 200px;
+    background: linear-gradient(77.58deg, #212C3F 64.86%, #EA142E 158.32%);
+    &__title {
+        padding-top: 200px;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 115%;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 140%;
+        color: #8C9BAA;
+        margin-top: 35px;
+    }
+    &__block {
+        margin-top: 100px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        width: 700px;
+        height: 150px;
+        border: 1px solid #ebeff01e;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__descr {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+    &__tag {
+        width: 100px;
+        height: 50px;
+        background-color: #EA142E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 140%;
+        margin-top: 60px;
+    }
+    &__text {
+        max-width: 450px;
+        margin-top: 35px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: #FFFFFF;
+        span {
+            font-weight: bold;
+            position: relative;
+            &::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+            }
+        }
+    }
+    &__warning {
+        margin-top: 55px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #8C9BAA;
+        padding-bottom: 139px;
+    }
+    &__link {
+        text-decoration: none;
+        color: red;
+    }
+    &__block2 {
+        position: relative;
+        height: 100%;
+    }
+    &__mainImg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 880px;
+        height: 410px;
+    }
+}
