@@ -8,14 +8,17 @@
     }
     &__blocks {
         margin-top: 100px;
+        transition: 0.5s all;
     }
     &__block {
         border-top: 1px solid #E3E3E3;
+        transition: 0.5s all;
         &_bb {
             border-bottom: 1px solid #E3E3E3;
         }
     }
     &__subtitle {
+        transition: 0.5s all;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,7 +27,10 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 140%;
-        transition: 0.5s all;
+        &_dBlock {
+            transition: 0.5s all;
+            color: #EA142E;
+        }
     }
     &__descr {
         display: none;
@@ -33,8 +39,10 @@
         line-height: 140%;
         color: #707C88;
         padding-bottom: 30px;
+        transition: 0.5s all;
         &_dBlock {
             display: block;
+            transition: 0.5s all;
         }
     }
     &__plus {
@@ -45,24 +53,21 @@
         height: 50px;
         border-radius: 100%;
         position: relative;
-        transition: 0.7s all;
+        transition: 0.5s all;
         &_dBlock {
-            transition: 0.7s all;
-            &:hover {
-                background-color: red;
-                width: 50px;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 100%;
-                transform: rotate(45deg);
-                transition: 0.7s all;
-                svg {
-                    path {
-                        stroke: #fff;
-                        fill: #fff;
-                    }
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            transform: rotate(45deg);
+            transition: 0.5s all;
+            svg {
+                path {
+                    stroke: #fff;
+                    fill: #fff;
                 }
             }
         }
