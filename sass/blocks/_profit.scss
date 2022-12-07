@@ -105,6 +105,25 @@
             font-weight: 600;
         }
     }
+    &__sliderContainer {
+        width: 100%;
+    }
+    &__slider {
+        -webkit-appearance: none;
+        width: 100%;
+        margin-top: 40px;
+        height: 1px;
+        background: #d3d3d343;
+        outline: none;
+        &::-webkit-slider-thumb {
+            border-radius: 100%;
+            appearance: none;
+            width: 20px; /* Set a specific slider handle width */
+            height: 20px; /* Slider handle height */
+            background: #FF3334; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+    }
 }
 
 .greyBlock {

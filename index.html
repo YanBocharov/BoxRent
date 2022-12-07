@@ -81,11 +81,11 @@
             <div class="profit__blocks">
                 <div class="profit__block">
                     <div class="profit__block-descr">Ваша инвестиция</div>
-                    <div class="profit__block-value"><div>10 000 €</div></div>
+                    <div class="profit__block-value"><div class="profit__block_value">10 000 €</div></div>
                     <div class="profit__block-snake">
-                        <div class="profit__block-snake-line">
-                            <img src="img/profit/ellipse.svg" alt="ellipse">
-                        </div>
+                        <div class="profit__sliderContainer">
+                            <input type="range" step="1000" min="5000" max="50000" value="5000" class="profit__slider" oninput="editValueProfitSliders()">
+                          </div>
                         <div class="profit__block-snake-line-text">
                             <div class="profit__block-snake-line_left">5 000 €</div>
                             <div class="profit__block-snake-line_right">50 000 €+</div>
@@ -94,10 +94,10 @@
                 </div>
                 <div class="profit__block">
                     <div class="profit__block-descr"><div>В вашей собственности</div></div>
-                    <div class="profit__block-value"><div>2 контейнера</div></div>
+                    <div class="profit__block-value"><div class="profit__block_value">2 контейнера</div></div>
                     <div class="profit__block-snake">
-                        <div class="profit__block-snake-line">
-                            <img src="img/profit/ellipse.svg" alt="ellipse">
+                        <div class="profit__sliderContainer">
+                            <input type="range" min="1" max="10" value="1" oninput="editValueProfitSliders()" class="profit__slider">
                         </div>
                         <div class="profit__block-snake-line-text">
                             <div class="profit__block-snake-line_left">1 конт.</div>
@@ -110,10 +110,10 @@
                         <a href="#" class="profit__block-descr-tm"></a>
                         Ваш возврат
                     </div>
-                    <div class="profit__block-value"><div>15.5 %</div></div>
+                    <div class="profit__block-value"><div class="profit__block_value">15.5 %</div></div>
                     <div class="profit__block-snake">
-                        <div class="profit__block-snake-line">
-                            <img src="img/profit/ellipse.svg" alt="ellipse">
+                        <div class="profit__sliderContainer">
+                            <input type="range" step="0.1" min="15" max="17" value="15" class="profit__slider" oninput="editValueProfitSliders()">
                         </div>
                         <div class="profit__block-snake-line-text">
                             <div class="profit__block-snake-line_left">15%</div>
@@ -1107,7 +1107,8 @@
                             <input placeholder="Ваш e-mail" type="email" class="request__email">
                         </div>
                         <div>
-                            <textarea placeholder="Комментарии" name="#" class="request__comment" id="#"></textarea>
+                            <textarea maxlength="500" placeholder="Комментарии" 
+                            name="#" class="request__comment"></textarea>
                         </div>
                         <div>
                             <a href="#" class="request__btn">Отправить заявку</a>
@@ -1168,6 +1169,105 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__blocks">
+                <div class="footer__block">
+                    <a href="tel:+37120440882" class="footer__nmb">+371 20 440 882</a>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social">
+                            <img src="img/footerSection/youtube.svg" alt="youtube">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="img/footerSection/facebook.svg" alt="youtube">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="img/footerSection/instagram.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__block footer__block_df">
+                    <a href="#" class="footer__mail">
+                        <img src="img/footerSection/mail.svg" alt="mail">
+                    </a>
+                    <div class="footer__block_text">
+                        <p><b>sales@boxrent.lv</b></p>
+                        <span>(Для клиентов)</span>
+                    </div>
+                </div>
+                <div class="footer__block footer__block_df">
+                    <a href="#" class="footer__mail">
+                        <img src="img/footerSection/mail.svg" alt="mail">
+                    </a>
+                    <div class="footer__block_text">
+                        <p><b>info@boxrent.lv</b></p>
+                        <span>(Сотрудничество)</span>
+                    </div>
+                </div>
+                <div class="footer__block footer__block_df">
+                    <a href="#" class="footer__mail">
+                        <img src="img/footerSection/marker.svg" alt="mail">
+                    </a>
+                    <div class="footer__block_text">
+                        <p>Braslas iela 20</p>
+                        <p>Krustbaznīcas iela 8a</p>
+                        <p>Rankas iela 8</p>
+                    </div>
+                </div>
+                <div class="footer__block footer__block_df">
+                    <a href="#" class="footer__mail">
+                        <img src="img/footerSection/marker.svg" alt="mail">
+                    </a>
+                    <div class="footer__block_text">
+                        <p>Jūrkalnes iela 6</p>
+                        <p>Airītes iela 9</p>
+                        <p>Slokas iela 130</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__blocks footer__blocks2">
+                <div class="footer__block2">
+                    <p>Название Пункта 1</p>
+                    <p>Название Пункта 2</p>
+                    <p>Название Пункта 3</p>
+                </div>
+                <div class="footer__block2">
+                    <p>Название Пункта 4</p>
+                    <p>Название Пункта 5</p>
+                    <p>Название Пункта 6</p>
+                </div>
+                <div class="footer__block2">
+                    <p>Название Пункта 7</p>
+                    <p>Название Пункта 8</p>
+                    <p>Название Пункта 9</p>
+                </div>
+                <div class="footer__payment">
+                    <div class="footer__payment_title">Реквезиты</div>
+                    <div class="footer__payment_pBlock">
+                        <p>SIA “Boxrent”</p>
+                        <p>Reģ.nr.: 42403049027</p>
+                        <p>PVN: LV42403049027</p>
+                        <p>Jur.adrese: Tallinas iela 77-3,<br>Rīga, LV-1009</p>
+                    </div>
+                </div>
+                <div class="footer__payment">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="footer__payment_pBlock">
+                        <p>Banka: Swedbank</p>
+                        <p>BIC/SWIFT: HABALV22</p>
+                        <p>Konts: LV96HABA0551050038843</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                Boxrent | 2022 Copyright © Все права защищены
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

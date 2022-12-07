@@ -1,0 +1,102 @@
+.footer {
+    position: relative;
+    min-height: 700px;
+    background: linear-gradient(77.58deg, #212C3F 64.86%, #EA142E 158.32%), #212C3F;
+    margin-top: 200px;
+    color: #fff;
+    &__blocks {
+        position: relative;
+        padding-top: 105px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        max-height: 100px;
+        &_df {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        &_text {
+            p {
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 140%;
+            }
+            span {
+                color: #8C9BAA;
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+    }
+    &__socials {
+        margin-top: 7px;
+    }
+    &__nmb {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        color: #fff;
+    }
+    &__mail {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    &__line {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.05);
+        margin-top: 120px;
+    }
+    &__blocks2 {
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    &__block2 {
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 300%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &__payment {
+        &_title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 230%;
+        }
+        &_pBlock {
+            margin-top: 30px;
+            display: grid;
+            row-gap: 25px;
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                color: #8C9BAA;
+            }
+        }
+    }
+    &__copyright {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #8C9BAA;
+    }
+}
