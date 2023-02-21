@@ -1,84 +1,84 @@
 .boxRent {
-    height: 1365px;
-    background: linear-gradient(77.58deg, #212C3F 74.78%, #EA142E 166.86%), #212C3F;
-    margin-top: 193px;
-    &__title {
-        width: 1060px;
-        margin: 0 auto;
-        padding-top: 191px;
-        font-weight: 600;
-        font-size: 70px;
-        line-height: 120%;
-        text-align: center;
-        color: #FFFFFF;
-        span {
-            color: #EA142E;
-        }
+  height: 1365px;
+  background: linear-gradient(77.58deg, #212c3f 74.78%, #ea142e 166.86%), #212c3f;
+  margin-top: 193px;
+  &__title {
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 191px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+    span {
+      color: #ea142e;
     }
-    &__img {
-        width: 1350px;
-        height: 855px;
-        margin: 0 auto;
-        margin-top: 75px;
+  }
+  &__img {
+    width: 1350px;
+    height: 855px;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+  &__items {
+    position: relative;
+  }
+  &__item {
+    z-index: 12;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #ea142e;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url('../../img/boxRent/close.svg') center center/cover no-repeat;
+      display: block;
+      z-index: 13;
     }
-    &__items {
-        position: relative;
+    &::after {
+      content: '';
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      border-radius: 100%;
+      background: #ea142e;
+      opacity: 0.1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-    &__item {
-        z-index: 12;
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background-color: #EA142E;
-        &::before {
-            content: '';
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: url('../../img/boxRent/close.svg') center center/cover no-repeat;
-            display: block; 
-            z-index: 13;
-        }
-        &::after {
-            content: '';
-            width: 90px;
-            height: 90px;
-            position: absolute;
-            border-radius: 100%;
-            background: #EA142E;
-            opacity: 0.1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        &_1 {
-            left: 186px;
-            top: calc(122px + 75px);
-        }
-        &_2 {
-            left: 352px;
-            top: calc(330px + 75px);
-        }
-        &_3 {
-            left: 543px;
-            top: calc(100px + 75px);
-        }
-        &_4 {
-            left: 885px;
-            top: calc(48px + 75px);
-        }
-        &_5 {
-            left: 901px;
-            top: calc(390px + 75px);
-        }
-        &_6 {
-            left: 1128px;
-            top: calc(196px + 75px);
-        }
+    &_1 {
+      left: 186px;
+      top: calc(122px + 75px);
     }
+    &_2 {
+      left: 352px;
+      top: calc(330px + 75px);
+    }
+    &_3 {
+      left: 543px;
+      top: calc(100px + 75px);
+    }
+    &_4 {
+      left: 885px;
+      top: calc(48px + 75px);
+    }
+    &_5 {
+      left: 901px;
+      top: calc(390px + 75px);
+    }
+    &_6 {
+      left: 1128px;
+      top: calc(196px + 75px);
+    }
+  }
 }
